@@ -18,9 +18,14 @@ you can run the following command install the packages needed to compile:
 
 sudo apt-get install libmysqlcppconn7v5 libmysqlcppconn-dev mariadb-server g++ gcc cmake wiringpi
 
-change to the DHT/build directory
+
+Make a build directory and cd into it
+cd DHT
+mkdir build
+cd build
 
 edit the DHT/src/dht.cpp file for your database and user
+nano ../src/dht.cpp
 
 compile with:
 cmake ..
